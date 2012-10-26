@@ -166,7 +166,7 @@ class NiplParser {
 		private function should_ignore($line) {
 		return empty($line) || 
 			   strncmp($line, "#", 1) == 0 ||
-			   strncmp($line, "//", 1) == 0;
+			   strncmp($line, "//", 2) == 0;
 	}
 	
 	private function is_operator($line) {
